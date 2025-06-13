@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kaizoku Quote App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe8cc;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #d6336c;
+    }
+    .quote {
+      font-size: 24px;
+      margin: 20px;
+      color: #343a40;
+    }
+    .character {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>One Piece Daily Quote</h1>
+  <div class="quote" id="quote"></div>
+  <div class="character" id="character"></div>
+  <img id="characterImage" src="" alt="One Piece Character" style="margin-top:20px;width:200px;border-radius:10px;" />
+  <br />
+  <button onclick="getNewQuote()">🎲 New Quote</button>
+
+  <script>
+    async function getNewQuote() {
+      const response = await fetch('/cgi-bin/get_quote.sh');
+      const data = await response.json();
+      document.getElementById("quote").innerText = '"' + data.quote + '"';
+      document.getElementById("character").innerText = "- " + data.character;
+      document.getElementById("characterImage").src = "images/" + data.image;
+    }
+
+    // Load one quote on page load
+    getNewQuote();
+  </script>
+</body>
+</html>
+
