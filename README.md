@@ -47,9 +47,10 @@ After setting up your EC2 instance:
 
 ## 📸 Sample Output
 
-> “I’m gonna become… the King of the Pirates!”  
-> — **Monkey D. Luffy**  
-> ![Luffy](images/luffy.jpg)
+> “Knight of the Sea - Jinbei"
+> Stop counting on what you have lost! What is gone, is gone!
+
+![Sample Output](images/one-piece-01.png)
 
 ---
 
