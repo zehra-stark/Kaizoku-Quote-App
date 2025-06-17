@@ -71,5 +71,9 @@ This app is a small tribute to the **One Piece** anime universe — teaching les
 
 ---
 
-## 🛠 Built with ❤️ by [zehra-stark](https://github.com/zehra-stark)
+## Author
 
+**Nivetha Velmurugan** ☁️  
+Aspiring Cloud Engineer | Code pirate sailing the Grand Line 🗺️  
+Big fan of *One Piece* – this app is my little tribute!
+[GitHub – zehrastark]
